@@ -1,0 +1,98 @@
+<!-- partials/DragDrop -->
+<section class="DragDrop">
+        
+         <link rel="stylesheet" href="css/cssdeck.css"></link> 
+        <link rel="stylesheet" href="css/cube.css"></link> 
+        <script src="js/ajaxCalled.js"></script>
+
+
+          <!--<div id="scatter">
+            <figure id="desk">
+            </figure>
+        </div>-->
+        <!--<div ng-repeat="item in ['green','yellow', 'red', 'blue']">
+            <div id="item{{ item }}" class="item" draggable item="item">{{ item }}</div>
+        </div>-->
+
+         
+
+        <!--<div ng-repeat="item in ['green','yellow', 'red', 'blue']">
+            <div class="wrap">
+                <div class="cube">
+                    <div class="cubefront">front</div>
+                    <div class="cubeback">back</div>
+                    <div class="cubetop">top</div>
+                    <div class="cubebottom">bottom</div>
+                    <div class="cubeleft">left</div>
+                    <div class="cuberight">right</div>
+                </div>
+            </div>
+        </div>-->
+
+        <div class="top">
+            <h1>Drag and Drop For Pr2</h1>
+            <h4>{{ message }}</h4>
+        </div>
+        <!--<div class="row">
+            <div class="col-sm-4" ng-repeat="bin in [1, 2, 3]">
+                <div id="bin{{ bin }}" class="bin" bin="bin" droppable drop="handleDrop">{{ bin }}</div>
+            </div>
+        </div>-->
+        <div class="blocks">
+            
+            <div class="left">
+                <div class="wrap">
+                    <div ng-repeat="item in ['green','yellow', 'red', 'blue']">
+                        <div id="{{ item }}" class="item cube" draggable item="item">
+                            <div class="cubefront {{ item }}"><!--{{ item }}--></div>
+                            <div class="cubeback {{ item }}"></div>
+                            <div class="cubetop {{ item }}"></div>
+                            <div class="cubebottom {{ item }}"></div>
+                            <div class="cubeleft {{ item }}"></div>
+                            <div class="cuberight {{ item }}"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap2">
+                    <div ng-repeat="item in ['blue 2','green 3','yellow 4','green 1']">
+                        <div id="{{ item }}" class="item cube" draggable item="item">
+                            <div class="cubefront {{ item }}"><!--{{ item }}--></div>
+                            <div class="cubeback {{ item }}"></div>
+                            <div class="cubetop {{ item }}"></div>
+                            <div class="cubebottom {{ item }}"></div>
+                            <div class="cubeleft {{ item }}"></div>
+                            <div class="cuberight {{ item }}"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div> Color Blocks </div>
+                <div class="colorblocks">
+                    <div ng-repeat="item in ['green','yellow', 'red', 'blue']">
+                        <div id="item{{ item }}" class="item" draggable item="item">{{ item }}</div>
+                    </div>
+                </div>-->
+            </div>
+            <div class="right">
+                <div ng-repeat="bin in [4,3,2,1]">
+                    <div id="bin{{ bin }}" class="bin" bin="bin" droppable drop="handleDrop"></div>
+                </div>
+            </div>
+            <div class="bottom">
+                <button class="btn btn-lg btn-info" id="reset">Reset <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span></button>
+                <button class="btn btn-lg btn-success" id="send">Send      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                <button class="btn btn-lg btn-info" id="InitialPosition">Initial Position      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+            </div>
+        </div>
+
+
+
+      <script src="js/ajaxCalled.js"></script>
+
+      
+
+</section>
+    
+    
+
+

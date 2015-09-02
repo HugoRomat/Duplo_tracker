@@ -1,0 +1,52 @@
+<html lang="fr" ng-app="routeApp">
+    <head>
+        <meta charset="utf-8" />
+        <title>Route App</title>        
+      <!-- SCROLLS -->
+      <!-- load bootstrap and fontawesome via CDN -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+      <!-- SPELLS -->
+      <!-- load angular and angular route via CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+      
+
+
+      <script src="js/vendor/angular.js"></script>
+      <script src="js/vendor/angular-route.js"></script>    
+      <script src="js/script.js"></script>
+      <script src="js/DragDrop.js"></script>
+
+      <link rel="stylesheet" href="css/style.css">
+      
+
+    </head>
+
+    <body>
+       <header>
+            <nav class="navbar navbar-inverse">
+            
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Pr2 : Interface</a>
+                    <a><img src="img/pr2.png" alt="Mountain View" style="width:80px;height:50px;"></a>
+
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/home"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#/DragDrop"><i class="fa fa-shield"></i> DragDrop</a></li>
+                    <li><a href="#/basicControl"><i class="fa fa-comment"></i> Basic Control</a></li>
+                </ul>
+            
+            </nav>
+        </header>
+        <div ng-view>
+        </div>
+
+         <script src="js/ajaxCalled.js"></script>
+    </body>
+</html>
